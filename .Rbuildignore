@@ -1,0 +1,6 @@
+\.git
+^README\.md$
+\.gitignore
+OutputExample
+LICENSE
+^\.Rhistory
