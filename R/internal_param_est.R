@@ -153,7 +153,7 @@ was performed with inversion of Kendall's Tau."
         }
       }
     }
-    if (copula == "clayton" & dim(x)[2] > 2 & param < 0) {
+    if (copula == "clayton" & param < 0) {
 stop(
 "The dependence parameter is negative for the dataset. For the clayton copula 
 this cannot be the case. Therefore is this not an appropriate copula for the 

@@ -1,8 +1,8 @@
 Package: gofCopula
 Type: Package
 Title: Goodness-of-Fit Tests for Copulae
-Version: 0.4-1
-Date: 2021-04-22
+Version: 0.4-2
+Date: 2021-12-03
 Author: Ostap Okhrin <ostap.okhrin@tu-dresden.de>, 
 		Simon Trimborn <trimborn.econometrics@gmail.com>, 
 		Martin Waltz <martin.waltz@tu-dresden.de>
