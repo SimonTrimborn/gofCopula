@@ -15,8 +15,11 @@
   }
 }
 
-# Printing function for an object of class goftime. goftime objects are created
-# by the function gofCheckTime.
+#' Printing function for an object of class goftime. goftime objects are created
+#' by the function gofCheckTime.
+#' @param x An object of class goftime
+#' @param ... Additional arguments passed to print
+#' @export
 print.goftime <- function(x, ...) {
 cat(sprintf(
 "The computation will take approximately %d d, %d h, %d min and %d sec.", 

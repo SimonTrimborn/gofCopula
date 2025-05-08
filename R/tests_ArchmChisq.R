@@ -10,7 +10,7 @@
 #' the estimation can be given. The approximate p-values are computed with a 
 #' parametric bootstrap, which computation can be accelerated by enabling 
 #' in-build parallel computation. The gof statistics are computed with the 
-#' function \code{\link{gofTstat}} from the package copula. 
+#' function \code{\link[copula]{gofTstat}} from the package copula. 
 #' It is possible to insert datasets of all dimensions above 1 
 #' (except for the \code{"amh"} copula) and the possible copulae are 
 #' \code{"clayton"}, \code{"gumbel"}, \code{"frank"}, \code{"joe"} and 

@@ -47,10 +47,10 @@ results. Defaults to \code{0.1}.}
 \item{inf.method}{Type of inference bands. Defaults to Bayesian Highest
 Density Intervals, \code{hdi}.}
 
-\item{theme}{Theme of the plot. See \code{\link{pirateplot}} for more
+\item{theme}{Theme of the plot. See \code{\link[yarrr]{pirateplot}} for more
 details. Defaults to \code{2}.}
 
-\item{...}{Further arguments to be passed to \code{\link{pirateplot}}.}
+\item{...}{Further arguments to be passed to \code{\link[yarrr]{pirateplot}}.}
 }
 \value{
 None
@@ -59,13 +59,13 @@ None
 Plots an object of class gofCOP.
 }
 \details{
-The plotting function is constructed around \code{\link{pirateplot}} from
+The plotting function is constructed around \code{\link[yarrr]{pirateplot}} from
 the \code{yarrr} package. Please see respective package for more details on
 the non-default specifications of the plotting function.
 
 We recommend not to amend the arguments \code{xlim}, \code{data},
 \code{formula}, \code{sortx}, \code{xaxt}, \code{ylim} and \code{ylab} from
-\code{\link{pirateplot}}. The arguments were defined such that the resulting
+\code{\link[yarrr]{pirateplot}}. The arguments were defined such that the resulting
 plot displays the test results in a proper manner.
 }
 \references{

@@ -2,11 +2,19 @@ Package: gofCopula
 Type: Package
 Title: Goodness-of-Fit Tests for Copulae
 Version: 0.4-2
-Date: 2021-12-03
-Author: Ostap Okhrin <ostap.okhrin@tu-dresden.de>, 
-		Simon Trimborn <trimborn.econometrics@gmail.com>, 
-		Martin Waltz <martin.waltz@tu-dresden.de>
-Maintainer: Simon Trimborn <trimborn.econometrics@gmail.com>
+Date: 2025-05-08
+Authors@R: c(person(given = "Simon",
+                        family = "Trimborn",
+                        role = c("aut", "cre"),
+                        email = "trimborn.econometrics@gmail.com"),
+		person(given = "Ostap",
+                        family = "Okhrin",
+                        role = "aut",
+                        email = "ostap.okhrin@tu-dresden.de"),
+                 person(given = "Martin",
+                        family = "Waltz",
+                        role = "aut",
+                        email = "martin.waltz@tu-dresden.de"))
 LazyLoad: yes
 LazyData: true
 Depends: R (>= 1.9.0), copula (>= 1.0-1)
@@ -17,4 +25,4 @@ Description: Several Goodness-of-Fit (GoF) tests for Copulae are provided. A new
 License: GPL (>=3)
 NeedsCompilation: yes
 Packaged: 2019-12-16 07:44:29 UTC; matsim
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.2

@@ -2,13 +2,13 @@
 #' 
 #' Plots an object of class gofCOP.
 #' 
-#' The plotting function is constructed around \code{\link{pirateplot}} from
+#' The plotting function is constructed around \code{\link[yarrr]{pirateplot}} from
 #' the \code{yarrr} package. Please see respective package for more details on
 #' the non-default specifications of the plotting function.
 #' 
 #' We recommend not to amend the arguments \code{xlim}, \code{data},
 #' \code{formula}, \code{sortx}, \code{xaxt}, \code{ylim} and \code{ylab} from
-#' \code{\link{pirateplot}}. The arguments were defined such that the resulting
+#' \code{\link[yarrr]{pirateplot}}. The arguments were defined such that the resulting
 #' plot displays the test results in a proper manner.
 #' 
 #' @method plot gofCOP
@@ -30,9 +30,9 @@
 #' \code{0.2}.
 #' @param inf.method Type of inference bands. Defaults to Bayesian Highest
 #' Density Intervals, \code{hdi}.
-#' @param theme Theme of the plot. See \code{\link{pirateplot}} for more
+#' @param theme Theme of the plot. See \code{\link[yarrr]{pirateplot}} for more
 #' details. Defaults to \code{2}.
-#' @param ...  Further arguments to be passed to \code{\link{pirateplot}}.
+#' @param ...  Further arguments to be passed to \code{\link[yarrr]{pirateplot}}.
 #' @return None
 #' @references Phillips, N. (2017). yarrr: A Companion to the e-Book "YaRrr!:
 #' The Pirate's Guide to R". \emph{R package version 0.1.5.}
