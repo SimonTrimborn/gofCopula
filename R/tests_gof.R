@@ -549,7 +549,7 @@ fill = TRUE)
       # Takes all tests and uses only the copula they share
       tests <- lapply(ls(pos = "package:gofCopula"), function(x) {
         a = try(eval(formals(x)$copula), silent = TRUE)
-        if (!is.null(a) & class(a) != "try-error") {
+        if (!is.null(a) & !inherits(class(a), "try-error")) {
           x
         }
       })

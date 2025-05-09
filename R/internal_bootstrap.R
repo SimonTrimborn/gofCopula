@@ -10,7 +10,7 @@
   bs.ac.c <- list()
 
   if (is.element(method, c("SnB", "SnC", "AnChisq", "AnGamma"))) {
-    if (class(copula) == "amhCopula") {
+    if (inherits(class(copula), "amhCopula")) {
       if (getAcop(copula)@paraConstr(copula@parameters,dim(copula)) == FALSE) {
 stop(
 "The Rosenblatt transformation cannot be computed for these parameters. Please 
@@ -20,11 +20,11 @@ consider using a different test or try different parameters for the copula."
     }
     
     # Rosenblatt transformation if needed 
-    if (class(copula) == "galambosCopula") {
+    if (inherits(class(copula), "galambosCopula")) {
       x = .rosenblatt.galambos(u = x, theta = copula@parameters)
-    } else if (class(copula) == "fgmCopula") {
+    } else if (inherits(class(copula), "fgmCopula")) {
       x = .rosenblatt.fgm(u = x, theta = copula@parameters)
-    } else if (class(copula) == "plackettCopula") {
+    } else if (inherits(class(copula), "plackettCopula")) {
       x = .rosenblatt.plackett(u = x, theta = copula@parameters)
     } else {
       x <- do.call(cCopula, c(list(x, copula = copula)))
@@ -33,10 +33,10 @@ consider using a different test or try different parameters for the copula."
   
   if (is.element(method, c("ArchmSnB", "ArchmSnC", "ArchmAnChisq", 
                            "ArchmAnGamma"))) {
-    if (class(copula) == "amhCopula") {
-      if (class(try(F.n(as.matrix(pCopula(x, copula)), 
+    if (inherits(class(copula), "amhCopula")) {
+      if (inherits(class(try(F.n(as.matrix(pCopula(x, copula)), 
                         as.matrix(pCopula(x, copula))), 
-                    silent = TRUE)) == "try-error") {
+                    silent = TRUE)), "try-error")) {
 stop(
 "The Rosenblatt transformation for Archimedean Copula cannot be computed for 
 these parameters. Please consider using a different test or try different 
@@ -154,11 +154,11 @@ parameters for the copula."
     
     # Rosenblatt transformation of simulated data if needed 
     if (is.element(method, c("SnB", "SnC", "AnChisq", "AnGamma"))) {
-      if (class(copula.sim) == "galambosCopula") {
+      if (inherits(class(copula.sim), "galambosCopula")) {
         xsim = .rosenblatt.galambos(u = xsim, theta = copula.sim@parameters)
-      } else if (class(copula) == "fgmCopula") {
+      } else if (inherits(class(copula), "fgmCopula")) {
         xsim = .rosenblatt.fgm(u = xsim, theta = copula.sim@parameters)
-      } else if (class(copula) == "plackettCopula") {
+      } else if (inherits(class(copula), "plackettCopula")) {
         xsim = .rosenblatt.plackett(u = xsim, theta = copula.sim@parameters)
       } else {
         xsim <- do.call(cCopula, c(list(xsim, copula = copula.sim)))
